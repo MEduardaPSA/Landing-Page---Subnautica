@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style-type: none;
+}
+
+:root {
+    --bg-color: #2398BD;
+    --color-letters: #154F6B;
+    --bg-btn-color: #C03500;
+}
+
+#main-content {
+    background-color: aliceblue;
+}
+
+/* Estilizando o HEADER */
+
+header h1 {
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+}
+
+header, .menu-list{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--bg-color);
+}
+
+header a {
+    padding-bottom: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    border: 1px solid transparent;
+    transition: all 0.7s;
+}
+
+header a:hover {
+    color: rgb(225, 225, 225);
+    border-bottom: 1px solid white;
+}
+
+.sub-titles {
+    margin-top: 35px;
+    font-weight: 800;
+    color: var(--color-letters);
+    text-align: center;
+}
+
+/* Estilizando o ABOUT */
+
+#about-subnautica {
+    color: var(--color-letters);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#about-subnautica h1{
+    font-size: 40px;
+    font-weight: bolder;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-right: 25px;
+}
+
+.subnautica-explication {
+    font-size: 17px;
+    font-weight: 600;
+    margin-right: 25px;
+    max-width: 500px;
+    text-align: end;
+}
+
+/* Estilizando o RESOURCES */
+
+#resources-subnautica {
+    padding: 30px;
+    margin: 0 auto;
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.resources {
+    color: var(--color-letters);
+    margin-top: 30px;
+    text-align: center;
+    max-width: 300px;
+}
+
+.resources h3 {
+    margin: 5px;
+}
+
+.resource-image img{
+    cursor: pointer;
+    border-radius: 15px;
+    width: 320px;
+    height: auto;
+    transition: all 0.3s;
+}
+
+.resources img:hover{
+    transform: scale3d(1.1, 1.1, 1.1);
+}
+
+/* Estilizando o AVALIATION */
+
+#avaliation-subnautica {
+    margin: 0 auto;
+    max-width: 500px;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.avaliations {
+    width: 400px;
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 15px;
+}
+
+#common-questions {
+    padding: 30px;
+    margin: 0 auto;
+    max-width: 850px;
+}
+
+.img-game {
+    margin: 30px;
+    border-radius: 30px;
+    width: 400px;
+    height: auto;
+}
+
+/* Estilizando o BUY */
+
+#buy-game {
+    padding: 30px;
+    text-align: center;
+}
+
+.game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buy-game-title {
+    font-weight: bolder;
+    color: var(--color-letters);
+}
+
+.buy-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+    width: 150px;
+    height: 40px;
+    background-color: var(--bg-btn-color);
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.5s;
+}
+
+.buy-link:hover {
+    background-color: #a63001;
+}
+
+@media (max-width: 425px) {
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    .menu-list {
+        display: none;
+    }
+
+    .img-game {
+        margin: 30px;
+        border-radius: 30px;
+        width: 200px;
+        height: auto;
+    }
+
+    .buy-link {
+        width: 120px;
+
+    }
+}
+
+
